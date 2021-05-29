@@ -192,14 +192,25 @@
                                 </div>
 
                                     <div class="form-group">
-                                        <label for="stx_string">TX Serial</label>
-                                        <input type="text" class="form-control" id="band" name="stx_string" value="<?php echo $qso->COL_STX_STRING; ?>">
+                                        <label for="stx_string">TX String</label>
+                                        <input type="text" class="form-control" id="stx_string" name="stx_string" value="<?php echo $qso->COL_STX_STRING; ?>">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="srx_string">RX Serial</label>
+                                        <label for="srx_string">RX String</label>
                                         <input type="text" class="form-control" id="srx_string" name="srx_string" value="<?php echo $qso->COL_SRX_STRING; ?>">
                                     </div>
+
+                                    <div class="form-group">
+                                        <label for="stx">TX Serial</label>
+                                        <input type="text" class="form-control" id="stx" name="stx" value="<?php echo $qso->COL_STX; ?>">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="srx">RX Serial</label>
+                                        <input type="text" class="form-control" id="srx" name="srx" value="<?php echo $qso->COL_SRX; ?>">
+                                    </div>
+
                                 <div class="form-row">
                                     <div class="form-group col-sm-6">
                                         <label for="locator">Gridsquare</label>
