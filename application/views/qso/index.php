@@ -149,6 +149,17 @@
 
 	      <!-- End my addition -->
 
+	      <div class="form-group">
+		<label for="transmit_power"><?php echo $this->lang->line('gen_hamradio_transmit_power'); ?></label>
+		<input type="number" step="0.001" class="form-control" id="transmit_power" name="transmit_power" value="<?php echo $this->session->userdata('transmit_power'); ?>" />
+		<small id="powerHelp" class="form-text text-muted"><?php echo $this->lang->line('qso_transmit_power_helptext'); ?></small>
+	      </div>
+
+	      <div class="form-group">
+		<label for="frequency"><?php echo $this->lang->line('gen_hamradio_frequency'); ?></label>
+		<input type="text" class="form-control" id="frequency" name="freq_display" value="<?php echo $this->session->userdata('freq'); ?>" />
+	      </div>
+
               <div class="form-group row">
                   <label for="name" class="col-sm-3 col-form-label"><?php echo $this->lang->line('general_word_name'); ?></label>
                   <div class="col-sm-9">
@@ -202,11 +213,6 @@
             </div>
 
             <div class="form-group">
-              <label for="frequency"><?php echo $this->lang->line('gen_hamradio_frequency'); ?></label>
-              <input type="text" class="form-control" id="frequency" name="freq_display" value="<?php echo $this->session->userdata('freq'); ?>" />
-            </div>
-
-            <div class="form-group">
               <label for="frequency_rx"><?php echo $this->lang->line('gen_hamradio_frequency_rx'); ?></label>
               <input type="text" class="form-control" id="frequency_rx" name="freq_display_rx" value="<?php echo $this->session->userdata('freq_rx'); ?>" />
             </div>
@@ -250,11 +256,6 @@
                   </select>
             </div>
 
-            <div class="form-group">
-              <label for="transmit_power"><?php echo $this->lang->line('gen_hamradio_transmit_power'); ?></label>
-              <input type="number" step="0.001" class="form-control" id="transmit_power" name="transmit_power" value="<?php echo $this->session->userdata('transmit_power'); ?>" />
-              <small id="powerHelp" class="form-text text-muted"><?php echo $this->lang->line('qso_transmit_power_helptext'); ?></small>
-            </div>
           </div>
 
           <!-- General Items -->
