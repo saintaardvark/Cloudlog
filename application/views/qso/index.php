@@ -123,12 +123,14 @@
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="rst_sent"><?php echo $this->lang->line('gen_hamradio_rsts'); ?></label>
-                  <input type="text" class="form-control form-control-sm" name="rst_sent" id="rst_sent" value="59">
+                  <input type="text" class="form-control form-control-sm" name="rst_sent" id="rst_sent"
+		  	 value="<?php if($this->session->userdata('mode') == "CW") { echo "599"; } else { echo "59"; } ?>">
                 </div>
 
                 <div class="form-group col-md-6">
                   <label for="rst_recv"><?php echo $this->lang->line('gen_hamradio_rstr'); ?></label>
-                  <input type="text" class="form-control form-control-sm" name="rst_recv" id="rst_recv" value="59">
+                  <input type="text" class="form-control form-control-sm" name="rst_recv" id="rst_recv"
+		  	 value="<?php if($this->session->userdata('mode') == "CW") { echo "599"; } else { echo "59"; } ?>">
                 </div>
               </div>
 
