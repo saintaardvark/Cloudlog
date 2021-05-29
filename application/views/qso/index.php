@@ -132,6 +132,21 @@
                 </div>
               </div>
 
+	      <!-- Here's my addition for serial etc -->
+              <div class="form-row">
+ 		<div class="form-group col-md-6">
+ 		  <label for="stx_string">TX Exch</label>
+                  <input type="text" class="form-control form-control-sm" id="exch_sent" name="exch_sent" value="">
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label for="srx_string">RX Exch</label>
+                  <input type="text" class="form-control form-control-sm" id="exch_recv" name="exch_recv" value="">
+                </div>
+	      </div>
+
+	      <!-- End my addition -->
+
               <div class="form-group row">
                   <label for="name" class="col-sm-3 col-form-label"><?php echo $this->lang->line('general_word_name'); ?></label>
                   <div class="col-sm-9">

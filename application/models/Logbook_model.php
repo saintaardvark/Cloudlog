@@ -36,10 +36,10 @@ class Logbook_model extends CI_Model {
             $stx_string = $this->input->post('exch_sent');
         }
     } else {
+        $srx = $this->input->post('exch_recv');
+        $stx = $this->input->post('exch_sent');
         $srx_string = null;
         $stx_string = null;
-        $srx = null;
-        $stx = null;
     }
 
     if($this->input->post('contestname')) {
