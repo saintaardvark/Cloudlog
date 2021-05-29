@@ -191,19 +191,15 @@
                                     </div>
                                 </div>
 
-                                <?php if ($qso->COL_STX_STRING) { ?>
                                     <div class="form-group">
                                         <label for="stx_string">TX Serial</label>
                                         <input type="text" class="form-control" id="band" name="stx_string" value="<?php echo $qso->COL_STX_STRING; ?>">
                                     </div>
-                                <?php } ?>
 
-                                <?php if ($qso->COL_SRX_STRING) { ?>
                                     <div class="form-group">
                                         <label for="srx_string">RX Serial</label>
                                         <input type="text" class="form-control" id="srx_string" name="srx_string" value="<?php echo $qso->COL_SRX_STRING; ?>">
                                     </div>
-                                <?php } ?>
                                 <div class="form-row">
                                     <div class="form-group col-sm-6">
                                         <label for="locator">Gridsquare</label>
